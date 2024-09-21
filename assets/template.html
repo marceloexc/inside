@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>INSIDE</title>
+
+	</head>
+	
+	<body>
+		
+		<header>
+			<img src="havana.webp">
+		</header>
+		
+		<h1>
+			INSIDE
+		</h1>
+		<p>
+			the archives at manor spectators.cc
+		</p>
+		
+		<table>
+			{{ range .Galleries }}
+			<tr>
+<!--				start range here-->
+				<td>
+					<span>
+						<img src="{{ .IndexSvg }}">
+					</span>
+				</td>
+				<td><a href="{{ .Filepath }}">~/{{ .Filepath }}</a></td>
+				<td>{{ .Date }}</td>
+			</tr>
+			{{ end }}
+		</table>
+
+		<p>
+			<a href="https://spectators.cc">
+				⇋ go back to spectators.cc
+				<span>
+					<img src="spectators.svg"/>
+				</span>
+			</a>
+		</p>
+		
+	<footer>
+		<p>
+			© Marcelo Mendez
+			<br  />
+			
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+				BY-NC-SA 4.0
+			</a>
+		</p>
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'cantiquenormal';
+	src: url('Cantique-Normal.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AureZerithaCJ';
+	src: url('ETBembo-RomanOSF.otf');
+}
+
+html {
+	background-color: black;;
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	background: #fff;
+	margin: 0;
+	max-width: 30em;
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	overflow: hidden;
+}
+
+header img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-family: "cantiquenormal";
+	margin: 0;
+	font-size: 3rem;
+	text-align: center;
+	line-height: 1.9;
+}
+
+p, td, tr {
+	font-family: "AureZerithaCJ";
+	text-align: center;
+}
+
+ table {
+  /* table-layout: ; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.2em ;
+  /* border-block: 1px solid black; */
+
+}
+
+span img {
+	width: 1em;
+	height: 1em;
+	vertical-align: middle; /* This keeps the image vertically aligned with text */
+}
+
+footer {
+	border-top: solid black 1px;
+}
