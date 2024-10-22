@@ -5,41 +5,99 @@
 	font-style: normal;
 }
 
+
 @font-face {
 	font-family: 'AureZerithaCJ';
 	src: url('ETBembo-RomanOSF.otf');
 }
 
+@font-face {
+	font-family: 'AUTHENTIC Sans';
+	src: url("AUTHENTICSans-90.woff2") format("woff2"),
+	url("AUTHENTICSans-90.woff") format("woff"),
+	url("AUTHENTICSans-90.otf");
+	font-style: normal;
+	font-display: swap;
+}
+
 html {
-	background-color: black;;
-	display: flex;
-	justify-content: center;
+	height: 100%;
 }
 
 body {
-	background: #fff;
+	background-image: url("havana.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 0;
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+main {
+	background: rgba(0, 0, 0, 0.602);
 	max-width: 30em;
 	width: 100%;
-}
-
-header {
-	width: 100%;
-	overflow: hidden;
-}
-
-header img {
-	object-fit: cover;
-	width: 100%;
-	height: auto;
+	min-width: 400px;
+	border: 2px solid black;
+	min-height: 100vh;
+	margin-left: auto;
 }
 
 h1 {
 	font-family: "cantiquenormal";
+	color: white;
 	margin: 0;
 	font-size: 3rem;
 	text-align: center;
 	line-height: 1.9;
+}
+
+h4 {
+	font: 10px "AUTHENTIC Sans";
+	color: white;
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+}
+
+.marker {
+	padding-inline: 1em;
+	/* padding-top: 1em; */
+}
+
+.divider {
+	border: 1px solid white;
+}
+
+h3 {
+	font: 10px "AUTHENTIC Sans";
+	color: white;
+	margin-block: 0.5em;
+}
+
+.outer {
+	margin: 1em;
+}
+
+.mosaic {
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	padding-block: 0.7em;
+	padding-inline: 0.5em;
+}
+
+.mosaic_wrap {
+	border: 1.5px solid #fff;
+	padding: 2px;
+	border-radius: 10px;
+}
+
+.mosaic_wrap svg {
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 p, td, tr {
@@ -47,16 +105,16 @@ p, td, tr {
 	text-align: center;
 }
 
- table {
-  /* table-layout: ; */
-  border-collapse: collapse;
-  width: 100%;
+table {
+	/* table-layout: ; */
+	border-collapse: collapse;
+	width: 100%;
 }
 
 th,
 td {
-  padding: 0.2em ;
-  /* border-block: 1px solid black; */
+	padding: 0.2em ;
+	/* border-block: 1px solid black; */
 
 }
 
@@ -68,4 +126,18 @@ span img {
 
 footer {
 	border-top: solid black 1px;
+}
+
+.table_container {
+	margin: 1em;
+}
+
+.table_entry {
+	display: grid;
+	grid-template-columns: 3.75rem 1fr;
+	border-bottom: 1px solid #fff;
+}
+
+.table_info {
+	border-left: 1px solid #fff;
 }

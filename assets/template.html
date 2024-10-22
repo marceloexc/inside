@@ -1,58 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>INSIDE</title>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</head>
-	
-	<body>
-		
-		<header>
-			<img src="havana.webp">
-		</header>
-		
-		<h1>
-			INSIDE
-		</h1>
-		<p>
-			the archives at manor spectators.cc
-		</p>
-		
-		<table>
-			{{ range .Galleries }}
-			<tr>
-<!--				start range here-->
-				<td>
-					<span>
+</head>
+
+<body>
+
+<h4>
+	INSIDE.SPECTATORS.CC
+
+	<br  />
+
+	COPYRIGHT 2024 MARCELO MENDEZ
+
+	<br  />
+
+	<i>( 956 )</i> AND <i>( 512 )</i>
+
+	<br  />
+
+	WEBSITE SELF HOSTED BY MACMINI
+
+	<br  />
+
+	LEFT PANEL - CUBA BY
+
+	<br  />
+
+	RIGHT PANEL - NAVIGATION MENU
+</h4>
+<main>
+	<h1>
+		INSIDE
+	</h1>
+
+	<aside>
+
+		<div class="marker">
+			<h3>
+				MOSAIC
+			</h3>
+			<div class="divider"></div>
+		</div>
+		<div class="mosaic_wrap outer">
+			<div class="mosaic_wrap">
+				<div class="mosaic_wrap">
+					<div class="mosaic">
+						{{ range .Galleries }}
 						<img src="{{ .IndexSvg }}">
-					</span>
-				</td>
-				<td><a href="{{ .Filepath }}">~/{{ .Filepath }}</a></td>
-				<td>{{ .Date }}</td>
-			</tr>
-			{{ end }}
-		</table>
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br  />
+
+		<div class="marker">
+			<h3>
+				TABLE
+			</h3>
+			<div class="divider"></div>
+		</div>
+
+		<div class="table_container">
+			<a class="table_entry">
+				<div class="table_favicon">
+					<h3>
+						data
+					</h3>
+				</div>
+
+				<div class="table_info">
+					<h3>
+						info
+					</h3>
+				</div>
+			</a>
+
+		</div>
 
 		<p>
 			<a href="https://spectators.cc">
-				⇋ go back to spectators.cc
-				<span>
-					<img src="spectators.svg"/>
-				</span>
+				⇋ go back to spectators.cc <span>
+						<img src="spectators.svg" />
+					</span>
 			</a>
 		</p>
-		
-	<footer>
-		<p>
-			© Marcelo Mendez
-			<br  />
-			
-			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-				BY-NC-SA 4.0
-			</a>
-		</p>
-	</footer>
-	</body>
+	</aside>
+
+</main>
+
+</body>
 </html>
